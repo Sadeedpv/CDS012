@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <img src="../images/farmer.png" height="40" width="40"/> FarmBridge
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="../index.html">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">inventory_2</span> Products
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="../deliveries/index.html">
+              <span class="material-icons-outlined">groups</span> Deliveries
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="../reports/index.html">
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>YOUR PRODUCTS</h2>
+        </div>
+      <div>
+
+        <div class="productcreate">
+          <div class="producttitle">
+              <p class="createtitle">Add a product <span class="material-icons-outlined" onclick="toggleAddButton()">add</span></p>
+          </div>
+          <div class="productform">
+            <form action="#">
+              <label for="fname">Product name</label>
+              <input type="text" id="fname" name="name" placeholder="Enter product name..">
+
+              <label for="lname">Price</label>
+              <input type="text" id="lname" name="price" placeholder="Enter price..">
+
+              <label for="country">Description</label>
+              <input type="text" id="lname" name="desc" placeholder="Enter description..">
+              <label for="img">Select image:</label>
+              <input type="file" id="img" name="img" accept="image/*">
+              
+              <input type="submit" value="Submit">
+             </form>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="Outer-card">
+          <div class="productCard">
+            <img src="https://5.imimg.com/data5/NS/ZC/OS/ANDROID-98659072/product-jpeg-500x500.jpg"
+            alt="Tomatos" style="width:100%">
+            <h3>Tomatos</h3>
+            <p class="price">$5.55</p>
+            <p class="Boxpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae minus fugiat, nihil ipsa illum commodi aspernatur natus maxime debitis consectetur nostrum aut iste explicabo perspiciatis quasi deserunt sapiente quibusdam!</p>
+            <p><button>Sell</button></p>
+          </div>
+          <div class="productCard">
+            <img src="https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP-1200-80.jpg"
+            alt="Tomatos" style="width:100%">
+            <h3>Potatos</h3>
+            <p class="price">$5</p>
+            <p class="Boxpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae minus fugiat, nihil ipsa illum commodi aspernatur natus maxime debitis consectetur nostrum aut iste explicabo perspiciatis quasi deserunt sapiente quibusdam!</p>
+            <p><button>Sell</button></p>
+          </div>
+          <div class="productCard">
+            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-27092,resizemode-75,msid-102435400/industry/cons-products/food/after-tomato-onion-prices-inch-up-amid-lower-sowing.jpg"
+            alt="Tomatos" style="width:100%">
+            <h3>Onions</h3>
+            <p class="price">$12.55</p>
+            <p class="Boxpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae minus fugiat, nihil ipsa illum commodi aspernatur natus maxime debitis consectetur nostrum aut iste explicabo perspiciatis quasi deserunt sapiente quibusdam!</p>
+            <p><button>Sell</button></p>
+          </div>
+        </div>
+      </div>
+      </main>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
