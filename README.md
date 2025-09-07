@@ -8,3 +8,6 @@ End-users get to buy their household necessities through our store for cheap pri
 So, a no-loss thing for both parties.
 
 ![thumbnail](./model.png)
+
+## CONTRIBUTORS
+[@salifjahangir] (https://www.github.com/salifjahangir)
