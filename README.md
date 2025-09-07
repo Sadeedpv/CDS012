@@ -10,4 +10,4 @@ So, a no-loss thing for both parties.
 ![thumbnail](./model.png)
 
 ## CONTRIBUTORS
-[@salifjahangir] (https://www.github.com/salifjahangir)
+[@salifjahangir](https://www.github.com/salifjahangir)
